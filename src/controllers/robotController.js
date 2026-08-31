@@ -10,9 +10,9 @@ exports.getAllRobots = async (req, res, next) => {
     const { status, facility, model } = req.query;
     const filter = {};
     
-    if (status) filter.status = status;
-    if (facility) filter['location.facility'] = facility;
-    if (model) filter.model = model;
+    if (status) filter.status = { $eq: status };
+    if (facility) filter['location.facility'] = { $eq: facility };
+    if (model) filter.model = { $eq: model };
 
     const robots = await Robot.find(filter)
       .select('-__v')
