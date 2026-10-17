@@ -47,7 +47,7 @@
     "minimist": "1.2.0",
     "marked": "0.3.6",
     "serialize-javascript": "1.4.0",
-    "handlebars": "4.0.10",
+    "handlebars": "4.7.10",
     "bootstrap": "3.3.7",
     "jquery": "2.1.4"
   },
